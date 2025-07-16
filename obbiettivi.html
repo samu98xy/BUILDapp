@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build | Fitness App</title>
+
+    <!--style & reset-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Abril+Fatface&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Jacques+Francois&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+     <!--logo-->
+    <div class="logo d-flex justify-content-center align-items-center">
+      <a href="./index.html" class="btn-home" ><img src="./img/logo.svg" alt="logo app"></a>
+    </div>
+
+    <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto">
+      <div class="line"></div>
+    </div>
+    
+    <!--Motivational-->
+    <div class="d-flex justify-content-center align-items-center container-fluid pad title title-obj">
+      <h1 class="text-center">Non fermarti finché non sei arrivato.</h1>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center p-obj ">
+        <p>In questa sezione puoi caricare una foto del tuo stato fisico attuale.  Imposta un obiettivo temporale — ad esempio 6 mesi — e attiva il timer.
+        Alla scadenza, riceverai una notifica automatica per caricare una nuova foto e confrontare i tuoi progressi.  È un modo semplice e potente per misurare i cambiamenti reali e restare motivato nel tempo.</p>
+    </div>
+
+    <!--step1-->
+    <div class="container-fluid title-step d-flex flex-column mx">
+        <h2>STEP 1- Carica una o più foto della tua condizione</h2>
+
+        <input type="file" id="uploadFoto" accept="image/*" style="display: none;">
+        <button id="caricaBtn" class="btn btn-primary mt-3 btn-obj align-self-start">+ Carica foto</button>
+
+        <div class="mt-4">
+            <img id="immagineCaricata" src="" alt="La tua foto" style="max-width: 100%; display: none; border-radius: 12px;">
+        </div>
+  </div>
+
+  <!--step2-->
+   <div class="container-fluid title-step d-flex flex-column mx-step">
+        <h2>STEP 2- imposta un timer e aspetta la notifica</h2>
+
+        <div class="d-flex flex-column justify-content-center align-items-center">
+  <div id="timer-setup" class="d-flex justify-content-center align-items-center gap-2">
+    <div class="d-flex flex-column align-items-center">
+      <label class="top-timer" for="input-years">Anni</label>
+      <input type="number" id="input-years" min="0" value="0" class="form-control text-center">
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <label class="top-timer" for="input-months">Mesi</label>
+      <input type="number" id="input-months" min="0" value="0" class="form-control text-center">
+    </div>
+
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <label class="top-timer" for="input-weeks">Settimane</label>
+      <input type="number" id="input-weeks" min="0" value="0" class="form-control text-center">
+    </div>
+  </div>
+
+  <div class="d-flex flex-column align-items-center">
+    <div id="timer-display" class="crono-number text-center mt-3" style="display: none;">
+      00 anni, 00 mesi, 00 settimane
+    </div>
+
+    <div class="d-flex crono-button-princ crono-timer-princ justify-content-center mt-2">
+      <button class="btn-crono" onclick="startTimer()">Start</button>
+      <button class="btn-crono" onclick="stopTimer()">Stop</button>
+      <button class="btn-crono" onclick="resetTimer()">Reset</button>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+  <!--step3-->
+    <div class="container-fluid title-step d-flex flex-column ">
+        <h2>STEP 3- Carica la foto della tua attuale condizione fisica e confrontati</h2>
+
+        <input type="file" id="uploadFoto" accept="image/*" style="display: none;">
+        <button id="caricaBtn" class="btn btn-primary mt-3 btn-obj align-self-start">+ Carica foto</button>
+
+        <div class="mt-4">
+            <img id="immagineCaricata" src="" alt="La tua foto" style="max-width: 100%; display: none; border-radius: 12px;">
+        </div>
+  </div>
+
+  <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto">
+      <div class="line"></div>
+    </div>
+
+    <!--box-->
+    <div class="box-cont d-flex flex-column align-items-center">
+       <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+        <img class="icon" src="./img/Vector2.svg" alt="icon 2">
+
+        <div class="d-flex flex-column align-items-center txt-btn1">
+          <h2 class="text-center" >Controlla la programmazione nel dettaglio</h2>
+
+          <div class="d-flex flex-column align-items-center btn-2 btn-2-cor">
+            <a href="./schede.html">Schede</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+        <img class="icon" src="./img/Vector3.svg" alt="icon 3">
+
+        <div class="d-flex flex-column align-items-center txt-btn1">
+          <h2 class="text-center" >Prenditi del tempo per recuperare...</h2>
+
+          <div class="d-flex flex-column align-items-center btn-2 btn-2-cor">
+            <a href="./timer.html">Cronometro</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+        <img class="icon" src="./img/Vector4.svg" alt="icon 4">
+
+        <div class="d-flex flex-column align-items-center txt-btn1">
+          <h2 class="text-center" >Controlla in tempo reale quanto ti stai allenando</h2>
+
+          <div class="d-flex flex-column align-items-center btn-2 btn-2-cor">
+            <a href="./calendario.html">Calendary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--dinamic nav-bar-->
+    <div class="navbar-din d-flex flex-column">
+      <div class="line2"></div>
+
+      <div class="d-flex justify-content-between align-items-center cont-nav">
+        <a href="./schede.html"><img src="./img/icon.png" alt="icon 0 nav"> </a>
+        <a href="./calendario.html"><img src="./img/icon1.png" alt="icon 1 nav"> </a>
+        <a href="./timer.html"><img src="./img/icon2.png" alt="icon 2 nav"> </a>
+        <a href="./obbiettivi.html"><img src="./img/icon3.png" alt="icon 3 nav"> </a>
+      </div>
+    </div>
+
+
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

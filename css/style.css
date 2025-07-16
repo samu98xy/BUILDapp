@@ -1,0 +1,401 @@
+
+    body{
+    background-color:black!important;
+
+    }
+    *{
+    font-family: Poppins;
+    color:white;
+    line-height: 1.6;
+    }
+
+    .mx-b{
+        margin-bottom:50px;
+    }
+    .mx{
+        margin: 50px 0;
+    }
+    .pad{
+        padding: 5% 0;
+    }
+
+    h1 {
+    font-size: 1.5rem!important;
+    line-height: 1.3;
+    margin-bottom:0!important;
+    font-weight:300!important;
+    }
+    h2 {
+    font-size: 1.2rem!important;
+    line-height: 1.3;
+    margin-bottom:0!important;
+    color:black!important;
+    font-weight:400!important;
+    }
+    p {
+    font-size: 16px;
+    margin-bottom:0!important;
+    }
+
+    /****************HOME***********/
+    .logo{
+        padding: 5% 0;
+    }
+    .btn-home{
+        width:25%;
+    }
+    .btn-home img{
+        width:100%;
+    }
+
+    /*line*/
+    .line-white{
+        padding:8% 6%;
+    }
+    .line{
+        background-color:white!important;
+        height:0.1vh;
+        width:100%;
+    }
+
+    /*title*/
+    .title{
+        margin-bottom:50px;
+
+    }
+    .title h1{
+        width:90%;
+    }
+
+    /*box*/
+    /*prima box*/
+    .box{
+        background: linear-gradient(to bottom, #727272, #D8D8D8);
+        width:90%!important;
+        border-radius:4px;
+        gap:20px;
+        padding:8% 0;
+    }
+    .icon{
+        width:10%;
+    }
+
+    .btn-1{
+        width:100%;
+        gap:50px;
+    }
+    .btn-1 a{
+        width:25%;
+    }
+    .btn-img{
+        width:100%;
+    }
+
+    .txt-btn1{
+        gap:30px;
+    }
+    /*seconda box*/
+    .btn-2{
+        width:90%;
+        gap:15px;
+    }
+    .btn-2 input{
+        border:none;
+        width:100%;
+        background-color:#101010;
+        border-radius:4px;
+        color:white;
+        font-weight:200;
+        font-size:1rem;
+    }
+    .btn-2 a{
+        text-decoration:none;
+        padding:0.5% 20%;
+        background-color:#101010;
+        color:white;
+        border-radius:4px;
+        font-size:0.9rem;
+        font-weight:200;
+        letter-spacing:1px;
+    }
+    .btn-2-cor a{
+        padding:0.5% 30%!important; 
+    }
+
+    .box-cont{
+        gap:30px;
+        margin-bottom:90px;
+    }
+
+    /*transition motivation*/
+    .fade-in {
+        color:black;
+        font-size:1.3rem;
+        text-decoration:underline;
+        opacity: 100;
+        transform: translateY(10px);
+        animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+
+
+        .fade-in {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+
+
+
+    /*dinamic navbar*/
+    .navbar-din{
+        width:100%;
+        position: fixed;
+        bottom: 0;
+        transition: background-color 0.3s ease;
+    }
+    .navbar-din.scrolled {
+        background-color: #444; 
+    }
+    .line2{
+        height:0.1vh;
+        width:100%;
+        background-color:white;
+    }
+    .cont-nav{
+        width:100%!important;
+        padding:4% 6%;
+    }
+
+    /****************Schede***************/
+    .box-schede{
+        padding:2% 3%;
+    }
+    .cont-schede{
+        width:33%;
+        padding-bottom:5%;
+    }
+    .cont-schede h2{
+        color:white!important;
+        text-align:center;
+        font-weight:200!important;
+        padding:10% 0;
+    }
+    .cont-schede input{
+        background-color:transparent;
+        border:none;
+        color:white;
+    }
+    .border-schede{
+        border-right:1px solid white;
+    }
+    .btn-schede{
+        margin-top:20px;
+    }
+    .btn-schede a{
+        padding:1% 10%!important;
+    }
+
+    .btn-schede a:active {
+    color: rgb(105, 105, 105);
+    }
+   .cont-schede-principale{
+        gap:50px;
+        margin-bottom:90px;
+   }
+
+   /***************CRONOMETRO******************/
+   /*crono*/
+   .btn-crono{
+        color:white;
+        background-color:#101010;
+        border:none;
+        border-radius:4px;
+        padding:1% 15%;
+        font-weight:200;
+   }
+   .crono-button-princ{
+        gap:20px;
+        
+   }
+   .crono-number{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:4rem;
+   }
+   .title-crono{
+        margin:0;
+   }
+   .title-crono h2{
+        color:white!important;
+        font-size:1.5rem!important;
+        font-weight:200!important;
+   }
+   .mx-low{
+        margin-bottom:20px;
+   }
+
+    /*timer*/
+   .form-control{
+        background-color:#101010!important;
+        border:none!important;
+        border-radius:4px!important;
+        color:white!important;
+   }
+   .top-timer{
+        font-weight:200;
+   }
+   .crono-timer-princ{
+        margin-top:20px;
+   }
+   .cont-tempo{
+    gap:80px;
+    margin-bottom:80px;
+   }
+   .mx-top-timer{
+    margin-top:80px;
+   }
+
+
+   /************CALENDARIO**********/
+.calendar {
+    width: 80%;
+    max-width: 400px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    user-select: none;
+    margin-bottom:30px;
+  }
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background-color: transparent;
+  }
+  .calendar-header button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .calendar-header .month-year {
+    font-weight: 400;
+    color:black;
+    font-size: 1.3rem;
+    background: linear-gradient(to bottom, #727272, #D8D8D8);
+    width:100%;
+    padding:3% 4%;
+    border-radius:4px;
+  }
+
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: transparent;
+    padding: 9px 0;
+    text-align: center;
+    font-weight: 700;
+    user-select: none;
+  }
+
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px 10px 15px 10px;
+    gap: 6px;
+  }
+
+  .day {
+    padding: 14px 0;
+    text-align: center;
+    border-radius: 8px;
+    cursor: default;
+    user-select: none;
+    font-weight: 200;
+    color: white;
+    font-size: 1rem;
+  }
+  .day.other-month {
+    color: rgb(146, 146, 146);
+  }
+  .day.today {
+    font-weight: 800;
+  }
+  .day.selected {
+    background-color: #4caf50;
+    color: white;
+    font-weight: 700;
+  }
+  .day.trained {
+  background-color: #28a745; /* verde */
+  color: white;
+  font-weight: bold;
+  border-color: #1e7e34;
+}
+
+
+/******************OBBIETTIVI***************/
+.title-obj{
+    margin-bottom:20px;
+}
+.p-obj{
+    width:90%!important;
+    margin-bottom:90px;
+}
+.p-obj p{
+    font-weight:200;
+}
+.title-step{
+    width:90%!important;
+    gap:20px;
+}
+.title-step h2{
+    color:white!important;
+}
+.btn-obj{
+    background: linear-gradient(to bottom, #727272, #D8D8D8);
+    border:0!important;
+    color:black!important;
+    font-weight:300!important;
+    padding:1% 10%!important;
+}
+
+.crono-number{
+    font-size:2rem!important;
+}
+.mx-step{
+    margin-bottom:90px;
+}
+
+
+
+
+
+
+
+
+
+
