@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build | Fitness App</title>
+
+    <!--style & reset-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Abril+Fatface&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Jacques+Francois&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+     <!--navbar-->
+    <nav class="navbar nav-log navbar-expand-lg  fixed-top">
+
+      <div class="container-fluid d-flex ">
+
+        <div class="space-div"></div>
+        
+        <a href="./index.html" class="btn-home" ><img src="./img/logo.svg" alt="logo app"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="img-ham" src="./img/hamburger.svg" alt="hamburger">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./schede.html">SCHEDE E DIETA</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./timer.html">OROLOGIO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./calendario.html">CALENDARIO</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./obbiettivi.html">OBBIETTIVI</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto">
+      <div class="line"></div>
+    </div>
+    
+    <!--Motivational-->
+    <div class="d-flex justify-content-center align-items-center container-fluid pad title title-obj">
+      <h1 class="text-center">Non fermarti finché non sei arrivato.</h1>
+    </div>
+
+    <div class="container-fluid d-flex justify-content-center p-obj ">
+        <p>In questa sezione puoi caricare una foto del tuo stato<span class="weight-step"> fisico attuale.</span><br> Imposta un obiettivo temporale:<br><br> — ad esempio 6 mesi — <br>e<span class="weight-step"> attiva il timer.</span><br><br>
+        Alla scadenza, riceverai una notifica automatica per caricare una nuova foto della tua <span class="weight-step">condizione attuale</span> e confrontare i tuoi progressi.<br> È un modo semplice e potente per misurare i cambiamenti reali e restare motivato nel tempo.</p>
+    </div>
+
+    <!--step1-->
+    <div class="container-fluid title-step d-flex flex-column mx">
+      <h2>STEP 1- Carica una o più foto della tua condizione</h2>
+
+      <div id="container">
+
+        <button id="uploadBtn" class="btn-upload">+ Carica Foto</button>
+
+        <input type="file" id="uploadInput" accept="image/*" style="display: none;">
+
+        <div id="photos" class="d-flex flex-wrap gap-3 mt-3"></div>
+      </div>
+    </div>
+    
+
+  <!--step2-->
+  <div class="cont-step2 d-flex flex-column mx-auto mx"> 
+      <h2>STEP 2- imposta un timer e aspetta la notifica</h2>
+    
+      <div id="timer-setup" class="timer-count d-flex justify-content-center">
+
+        <div class="count-cont d-flex flex-column align-items-center">
+          <label class="top-timer" for="input-hours">Anni</label>
+          <input type="number" id="input-years"  min="0" value="0">
+        </div>
+
+        <div class="count-cont d-flex flex-column align-items-center">
+          <label class="top-timer" for="input-hours">Mesi</label>
+          <input type="number" id="input-months" min="0" value="0">
+        </div>
+
+        <div class="count-cont d-flex flex-column align-items-center">
+          <label class="top-timer" for="input-hours">Settimane</label>
+          <input type="number" id="input-weeks"  min="0" value="0">
+          </div>
+
+      </div>
+
+      <div class="mx-auto " id="timer-display" style="display: none; font-size:1.4rem;">
+        <!--countdown-->
+      </div>
+
+      <div class="buttons d-flex justify-content-center">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+      </div>
+  </div>
+
+
+  <!--step3-->
+    <div class="container-fluid title-step d-flex flex-column ">
+        <h2>STEP 3- Carica le foto della tua attuale condizione fisica e confrontati</h2>
+
+          <button id="uploadBtn-after" class="btn-upload align-self-start">+ Carica Foto</button>
+          <input type="file" id="uploadInput-after" accept="image/*" style="display: none;">
+          <div id="photos-after" class="d-flex flex-wrap gap-3 mt-3"></div>
+          </div>
+
+  <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto">
+      <div class="line"></div>
+    </div>
+
+    <!--box-->
+    <div class="box-cont d-flex flex-column align-items-center">
+       <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+        <img class="icon" src="./img/Vector2.svg" alt="icon 2">
+
+        <div class="d-flex flex-column align-items-center txt-btn1">
+          <h2 class="text-center" >Controlla programmazione e dieta nel dettaglio</h2>
+
+          <div class="d-flex flex-column align-items-center btn-2 btn-2-cor">
+            <a href="./schede.html">Schede & dieta</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+        <img class="icon" src="./img/Vector3.svg" alt="icon 3">
+
+        <div class="d-flex flex-column align-items-center txt-btn1">
+          <h2 class="text-center" >Prenditi del tempo per recuperare...</h2>
+
+          <div class="d-flex flex-column align-items-center btn-2 btn-2-cor">
+            <a href="./timer.html">Orologio</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+        <img class="icon" src="./img/Vector4.svg" alt="icon 4">
+
+        <div class="d-flex flex-column align-items-center txt-btn1">
+          <h2 class="text-center" >Controlla in tempo reale quanto ti stai allenando</h2>
+
+          <div class="d-flex flex-column align-items-center btn-2 btn-2-cor">
+            <a href="./calendario.html">Calendary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto test-line">
+      <div class="line"></div>
+    </div>
+    
+    <div class="d-flex flex-column box-test">
+      <!--tester-->
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto test-box">
+          <img class="icon" src="./img/deployed_code_alert_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="icon 2">
+
+          <div class="d-flex flex-column align-items-center txt-btn1 txt-test">
+            <h2 class="text-center" >FOR TESTER</h2>
+            <p class="text-center" >Bug, Errori, Feedback, Migliorie? Reporta tutto direttamente qui! Grazie mille</p>
+
+            <form class="d-flex flex-column align-items-center gap-3 report-form" action="https://formspree.io/f/xrblppov" method="POST">
+                
+                <input class="test-space text-center" type="email" name="email" placeholder="Email(facoltativa)...">
+
+                <textarea class="test-space text-center" placeholder="Il tuo report..." name="message"></textarea>
+
+                <button class="btn-test" type="submit">Invia</button>
+            </form>
+
+          </div>
+        </div>
+
+      <!--Update-->
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto test-box">
+          <img class="icon" src="./img/folder_code_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="icon 2">
+
+          <div class="d-flex flex-column align-items-center txt-btn1 txt-test">
+            <h2 class="text-center" >UPDATE</h2>
+            <p class="text-center" >Tutte le modifiche e gli aggiornamenti della nuova versione</p>
+
+            <a href="./pdf/0.0.1.pdf" download class="btn-test">Scarica PDF</a>
+          </div>
+        </div>
+    </div>
+
+     <!--footer-->
+    <div class="footer d-flex justify-content-center align-items-center text-center">
+      <p>Version: 0.0.1 (2025)<br>Tecnologies:<br>HTML, CSS, JAVASCRIPT + Framework <br> Design & Development: Samuel <br> Admin: Samuel<br>@Tutti i diritti riservati</p>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/exif-js/2.3.0/exif.min.js"></script>
+
+    <script src="timer.js"></script>
+    <script src="script2.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

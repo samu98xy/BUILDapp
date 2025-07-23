@@ -1,0 +1,607 @@
+
+    body{
+    background-color:black!important;
+    padding-top:40%;
+
+    }
+    *{
+    font-family: Poppins;
+    color:white;
+    line-height: 1.6;
+    }
+
+    .mx-b{
+        margin-bottom:50px;
+    }
+    .mx{
+        margin: 50px 0;
+    }
+    .pad{
+        padding: 5% 0;
+    }
+
+    h1 {
+    font-size: 1.5rem!important;
+    line-height: 1.3;
+    margin-bottom:0!important;
+    font-weight:300!important;
+    }
+    h2 {
+    font-size: 1.2rem!important;
+    line-height: 1.3;
+    margin-bottom:0!important;
+    color:black!important;
+    font-weight:400!important;
+    }
+    p {
+    font-size: 16px;
+    margin-bottom:0!important;
+    }
+
+    /****************HOME***********/
+    .logo{
+        padding: 5% 0;
+    }
+    .btn-home{
+        width:30%;
+    }
+    .btn-home img{
+        width:100%;
+    }
+    .img-ham{
+        width:100%!important;
+    }
+    .navbar-toggler{
+        width:15%!important;
+    }
+    .nav-log{
+        background-color:black!important;
+    }
+    .space-div{
+        width:15%!important;
+    }
+    .nav-link{
+        color:white!important;
+        text-align:right;
+        padding-right:8%!important;
+    }
+
+
+    
+
+    /*line*/
+    .line-white{
+        padding:8% 6%;
+    }
+    .line{
+        background-color:white!important;
+        height:0.1vh;
+        width:100%;
+    }
+
+    /*title*/
+    .title{
+        margin-bottom:30px;
+
+    }
+    .title h1{
+        width:90%;
+    }
+
+    /*box*/
+    /*prima box*/
+    .box{
+        background: linear-gradient(to bottom, #727272, #D8D8D8);
+        width:90%!important;
+        border-radius:4px;
+        gap:20px;
+        padding:8% 0;
+    }
+    .icon{
+        width:10%;
+    }
+
+    .btn-1{
+        width:100%;
+        gap:50px;
+    }
+    .btn-1 a{
+        width:25%;
+    }
+    .btn-img{
+        width:100%;
+    }
+
+    .txt-btn1{
+        gap:30px;
+    }
+    /*seconda box*/
+    .btn-2{
+        width:90%;
+        gap:15px;
+    }
+    .btn-2 input{
+        border:none;
+        width:100%;
+        background-color:#101010;
+        border-radius:4px;
+        color:white;
+        font-weight:200;
+        font-size:1rem;
+    }
+    .btn-2 a{
+        text-decoration:none;
+        padding:0.5% 20%;
+        background-color:#101010;
+        color:white;
+        border-radius:4px;
+        font-size:0.9rem;
+        font-weight:200;
+        letter-spacing:1px;
+    }
+    .btn-2-cor a{
+        padding:0.5% 20%!important; 
+    }
+
+    .box-cont{
+        gap:30px;
+    }
+
+    /*transition motivation*/
+    .fade-in {
+        color:black;
+        font-size:1.3rem;
+        text-decoration:underline;
+        opacity: 100;
+        transform: translateY(10px);
+        animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+
+
+        .fade-in {
+        opacity: 0;
+        transform: translateY(10px);
+        animation: fadeIn 0.6s ease forwards;
+        }
+
+        @keyframes fadeIn {
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        }
+
+
+
+
+    
+    /****************Schede***************/
+    .box-schede{
+        padding:2% 3%;
+    }
+    .cont-schede{
+        width:33%;
+        padding-bottom:5%;
+    }
+    .cont-schede h2{
+        color:black!important;
+        text-align:center;
+        font-weight:300!important;
+        padding:10% 0;
+    }
+    .cont-schede input{
+        background-color:transparent;
+        border:none;
+        color:black;
+    }
+    .btn-schede{
+        margin-top:20px;
+    }
+    .btn-schede a{
+        padding:1% 10%!important;
+        transition:0.1s ease-in-out;
+    }
+    .btn-schede a:active{
+        transform:scale(0.95);
+    }
+
+   .cont-schede-principale{
+        gap:50px;
+        margin-bottom:90px;
+   }
+   .weight-sched{
+    font-weight:400!important;
+    color:black!important;
+   }
+   .accordion{
+    width:90%!important;
+    margin-bottom:20px;
+   }
+   .accordion-button{
+        border:none!important;
+        font-weight:500!important;
+        background: linear-gradient(to bottom, #727272, #D8D8D8)!important;
+   }
+   .accordion-item{
+        border:0!important;
+   }
+   .sched{
+        padding:5% 0;
+   }
+   .alternative-schede{
+        margin-bottom:40px!important;
+        width:90%!important;
+   }
+   .alternative-schede p{
+    font-weight:200;
+   }
+   .mx-no{
+    margin-bottom:20px!important;
+   }
+   .pdf-upload{
+    width:95%!important;
+    margin-bottom:90px;
+   }
+   .btnSchedeDelete{
+    color:white;
+    font-weight:200;
+    background: transparent;
+    border:1px solid white;
+    border-radius:0;
+   }
+     .btnDietaDelete{
+    color:white;
+    font-weight:200;
+    background: transparent;
+    border:1px solid white;
+    border-radius:0;
+   }
+   .img-upload{
+    gap:20px!important;
+   }
+   
+
+    
+
+   /***************CRONOMETRO******************/
+   /*crono*/
+   .btn-crono{
+        color:white;
+        background-color:#101010;
+        border:none;
+        border-radius:4px;
+        padding:1% 24px;
+        font-weight:200;
+   }
+   .crono-button-princ{
+        gap:20px;
+        
+   }
+   .crono-number{
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:4rem;
+   }
+   .title-crono{
+        margin:0;
+   }
+   .title-crono h2{
+        color:white!important;
+        font-size:1.5rem!important;
+        font-weight:200!important;
+   }
+   .mx-low{
+        margin-bottom:20px;
+   }
+
+    /*timer*/
+   .form-control{
+        background-color:#101010!important;
+        border:none!important;
+        border-radius:4px!important;
+        color:white!important;
+   }
+   .top-timer{
+        font-weight:200;
+   }
+   .crono-timer-princ{
+        margin-top:20px;
+   }
+   .cont-tempo{
+    gap:80px;
+    margin-bottom:80px;
+   }
+   .mx-top-timer{
+    margin-top:80px;
+   }
+
+        #timer-display {
+        font-family: 'Inter', sans-serif;
+        font-variant-numeric: tabular-nums;
+        font-size: 2rem;
+        text-align: center;
+        width: 200px;
+        letter-spacing: 1px;
+        }
+        #chrono {
+        font-family: 'Inter', sans-serif;
+        font-variant-numeric: tabular-nums; /* cifre a larghezza fissa */
+        font-weight: 500;
+        font-size: 2.5rem;
+        letter-spacing: 1px;
+        width: 200px; /* evita ricalcoli del layout */
+        text-align: center;
+        }
+
+
+.btn-crono {
+  transition: transform 0.1s ease;
+}
+
+.btn-crono:active {
+  transform: scale(0.95);
+}
+.title-round{
+    font-weight:200!important;
+}
+
+
+
+
+
+
+   /************CALENDARIO**********/
+.calendar {
+    width: 80%;
+    max-width: 400px;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    user-select: none;
+    margin-bottom:30px;
+  }
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 18px;
+    background-color: transparent;
+  }
+  .calendar-header button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    user-select: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+ 
+  .calendar-header .month-year {
+    font-weight: 400;
+    color:black;
+    font-size: 1.3rem;
+    background: linear-gradient(to bottom, #727272, #D8D8D8);
+    width:100%;
+    padding:3% 4%;
+    border-radius:4px;
+  }
+
+  .weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: transparent;
+    padding: 9px 0;
+    text-align: center;
+    font-weight: 700;
+    user-select: none;
+  }
+
+  .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    padding: 10px 10px 15px 10px;
+    gap: 6px;
+  }
+
+  .day {
+    padding: 14px 0;
+    text-align: center;
+    border-radius: 8px;
+    cursor: default;
+    user-select: none;
+    font-weight: 200;
+    color: white;
+    font-size: 1rem;
+  }
+  .day.other-month {
+    color: rgb(146, 146, 146);
+  }
+  .day.today {
+    font-weight: 800;
+  }
+  .day.selected {
+    background-color: #4caf50;
+    color: white;
+    font-weight: 700;
+  }
+  .day.trained {
+  background-color: #28a745; /* verde */
+  color: white;
+  font-weight: bold;
+  border-color: #1e7e34;
+}
+
+
+/******************OBBIETTIVI***************/
+.title-obj{
+    margin-bottom:20px;
+}
+.p-obj{
+    width:90%!important;
+    margin-bottom:90px;
+}
+.p-obj p{
+    font-weight:200;
+}
+.title-step{
+    width:90%!important;
+    gap:20px;
+}
+.title-step h2{
+    color:white!important;
+}
+.btn-obj{
+    background: linear-gradient(to bottom, #727272, #D8D8D8);
+    border:0!important;
+    color:black!important;
+    font-weight:300!important;
+    padding:1% 10%!important;
+}
+
+.crono-number{
+    font-size:2rem!important;
+}
+.mx-step{
+    margin-bottom:90px;
+}
+
+.btn-upload{
+    background: linear-gradient(to bottom, #727272, #D8D8D8);
+    border:none;
+    border-radius:4px;
+    color:black;
+    padding:1% 24px;
+}
+.delete-btn{
+    color:white;
+    background: transparent;
+    border:1px solid white;
+    border-radius:0;
+    font-weight:200;
+
+}
+
+/*countdown*/
+.count-cont{
+    width:20%;
+}
+.timer-count{
+    gap:15px;
+    margin-bottom:10px;
+    
+}
+.timer-count input{
+    width:100%;
+    background-color:#101010!important;
+        border:none!important;
+        border-radius:4px!important;
+        color:white!important;
+        text-align:center;
+        font-size:1.2 rem;
+}
+.buttons{
+    gap:25px;
+}
+.buttons button{
+    color:white;
+        background-color:#101010;
+        border:none;
+        border-radius:4px;
+        padding:1% 24px;
+        font-weight:200;
+        transition: transform 0.1s ease; 
+   }
+.buttons button:active{
+  transform: scale(0.95);
+}
+.cont-step2{
+    width:90%;
+    padding:0 4%;
+}
+.cont-step2 h2{
+    color:white!important;
+    margin-bottom:20px!important;
+}
+.weight-step{
+    font-weight:500;
+}
+
+
+        
+
+
+
+ 
+
+
+/*******footer*******/
+.footer{
+    padding:3% 0;
+    background-color:rgb(5, 5, 5);
+}
+.footer p{
+    font-weight:200;
+    font-size:0.9rem!important;
+}
+
+
+
+
+/************tester************/
+.txt-test h2{
+    font-size:1.3rem!important;
+}
+.txt-test p{
+    color:black;
+}
+.test-space{
+    border:none;
+        width:100%;
+        background-color:#101010;
+        border-radius:4px;
+        color:white;
+        font-weight:200;
+        font-size:1rem;
+        padding:2% 0;
+        font-weight:300;
+        font-size:0.9rem!important;
+}
+.report-form{
+    width:85%!important;
+}
+.btn-test{
+    text-decoration:none;
+    border:none;
+        padding:0.5% 20%;
+        background-color:#101010;
+        color:white;
+        border-radius:4px;
+        font-size:0.9rem;
+        font-weight:200;
+        letter-spacing:1px;
+}
+.box-test{
+    margin-bottom:90px;
+    gap:30px;
+}
+.test-line{
+    padding:20% 6%;
+}
+.mx-no{
+    margin-bottom:0!important;
+}
+
+
+
+

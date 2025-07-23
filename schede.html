@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build | Fitness App</title>
+
+    <!--style & reset-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Abril+Fatface&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Jacques+Francois&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+     <!--navbar-->
+    <nav class="navbar nav-log navbar-expand-lg  fixed-top">
+
+      <div class="container-fluid d-flex ">
+
+        <div class="space-div"></div>
+        
+        <a href="./index.html" class="btn-home" ><img src="./img/logo.svg" alt="logo app"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="img-ham" src="./img/hamburger.svg" alt="hamburger">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./schede.html">SCHEDE E DIETA</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./timer.html">OROLOGIO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./calendario.html">CALENDARIO</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./obbiettivi.html">OBBIETTIVI</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+
+    <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto">
+      <div class="line"></div>
+    </div>
+    
+
+    <!--Motivational-->
+    <div class="d-flex justify-content-center align-items-center container-fluid pad title">
+      <h1 class="text-center">LA TUA SCHEDA</h1>
+    </div>
+
+    <!--alternative-->
+    <div class="container-fluid alternative-schede">
+        <p>Imposta la tua scheda di allenamento direttamaente da qui, oppure...</p>
+    </div>
+
+    <!--schede-->
+    <div class="accordion  mx-auto accordion-flush" id="accordionFlushExample">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                GIORNO 1
+            </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--schede-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Esercizio</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Serie X Rep</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Kg</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                GIORNO 2
+            </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        
+                <!--schede-->
+                <div class="d-flex flex-column sched">
+                <div class="d-flex justify-content-center">
+                    <div class="d-flex flex-column cont-schede border-schede">
+                        <h2>Esercizio</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                    </div>
+
+                    <div class="d-flex flex-column cont-schede border-schede">
+                        <h2>Serie X Rep</h2>
+                    <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                    </div>
+
+                    <div class="d-flex flex-column cont-schede">
+                        <h2>Kg</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                        <input class="text-center" type="text" placeholder="...">
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                        <a href="#">Modifica</a>
+                        <a href="#">Conferma</a>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                GIORNO 3
+            </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--schede-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Esercizio</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Serie X Rep</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Kg</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                GIORNO 4
+            </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--schede-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Esercizio</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Serie X Rep</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Kg</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                GIORNO 5
+            </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--schede-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Esercizio</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Serie X Rep</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Kg</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                GIORNO 6
+            </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--schede-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Esercizio</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Serie X Rep</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Kg</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                GIORNO 7
+            </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--schede-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Esercizio</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Serie X Rep</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Kg</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     <!--alternative-->
+    <div class="container-fluid alternative-schede">
+                <p>Carica direttamente la foto o il PDF della tua scheda</p>
+    </div>
+            
+    <div class="container-fluid pdf-upload mx-auto">
+            <input
+                    type="file"
+                    id="uploadSchedeFiles"
+                    accept="image/*,application/pdf"
+                    multiple
+                    style="display: none;"
+                />
+            <button id="btnSchedeUpload" class="btnSchedeUpload btn-upload">+ Carica foto o PDF Schede</button>
+            <div id="previewSchedeArea" style="margin-top: 20px;" class="d-flex flex-column  img-upload"></div>
+    </div>
+
+
+
+
+    <!--Motivational-->
+    <div class="d-flex justify-content-center align-items-center container-fluid pad title">
+      <h1 class="text-center">IL TUO PIANO NUTRIZIONALE</h1>
+    </div>
+
+   
+    <!--alternative-->
+    <div class="container-fluid alternative-schede">
+        <p>Imposta il tuo piano nutrizionale da qui, oppure...</p>
+    </div>  
+    <!--Dieta-->
+    <div class="accordion  mx-auto accordion-flush" id="accordionFlushExample">
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne-2" aria-expanded="false" aria-controls="flush-collapseOne-2">
+                PASTO 1
+            </button>
+            </h2>
+            <div id="flush-collapseOne-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--pasti-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Alimento</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Grammi</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Calorie</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo-2" aria-expanded="false" aria-controls="flush-collapseTwo-2">
+                PASTO 2
+            </button>
+            </h2>
+            <div id="flush-collapseTwo-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+        
+                <!--pasti-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Alimento</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Grammi</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Calorie</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree-2" aria-expanded="false" aria-controls="flush-collapseThree-2">
+                PASTO 3
+            </button>
+            </h2>
+            <div id="flush-collapseThree-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--pasti-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Alimento</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Grammi</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Calorie</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour-2" aria-expanded="false" aria-controls="flush-collapseFour-2">
+                PASTO 4
+            </button>
+            </h2>
+            <div id="flush-collapseFour-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--pasti-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Alimento</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Grammi</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Calorie</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive-2" aria-expanded="false" aria-controls="flush-collapseFive-2">
+                PASTO 5
+            </button>
+            </h2>
+            <div id="flush-collapseFive-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--pasti-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Alimento</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Grammi</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Calorie</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix-2" aria-expanded="false" aria-controls="flush-collapseSix-2">
+                PASTO 6
+            </button>
+            </h2>
+            <div id="flush-collapseSix-2" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <!--pasti-->
+                <div class="d-flex flex-column sched">
+                    <div class="d-flex justify-content-center">
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Alimento</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede border-schede">
+                            <h2>Grammi</h2>
+                        <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+
+                        <div class="d-flex flex-column cont-schede">
+                            <h2>Calorie</h2>
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                            <input class="text-center" type="text" placeholder="...">
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center align-items-center btn-2 btn-schede align-self-center">
+                            <a href="#">Modifica</a>
+                            <a href="#">Conferma</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+     <!--alternative-->
+    <div class="container-fluid alternative-schede">
+                <p>Carica direttamente la foto o il PDF della tua dieta</p>
+    </div>
+             
+    <div class="container-fluid pdf-upload mx-auto mx-no">
+            <input
+                    type="file"
+                    id="uploadDietaFiles"
+                    accept="image/*,application/pdf"
+                    multiple
+                    style="display: none;"
+                />
+            <button id="btnDietaUpload" class="btnDietaUpload btn-upload">+ Carica foto o PDF Dieta</button>
+            <div id="previewDietaArea" style="margin-top: 20px;" class="d-flex flex-column  img-upload"></div>
+    </div>
+
+    <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto test-line">
+      <div class="line"></div>
+    </div>
+    
+    <div class="d-flex flex-column box-test">
+      <!--tester-->
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto test-box">
+          <img class="icon" src="./img/deployed_code_alert_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="icon 2">
+
+          <div class="d-flex flex-column align-items-center txt-btn1 txt-test">
+            <h2 class="text-center" >FOR TESTER</h2>
+            <p class="text-center" >Bug, Errori, Feedback, Migliorie? Reporta tutto direttamente qui! Grazie mille</p>
+
+            <form class="d-flex flex-column align-items-center gap-3 report-form" action="https://formspree.io/f/xrblppov" method="POST">
+                
+                <input class="test-space text-center" type="email" name="email" placeholder="Email(facoltativa)...">
+
+                <textarea class="test-space text-center" placeholder="Il tuo report..." name="message"></textarea>
+
+                <button class="btn-test" type="submit">Invia</button>
+            </form>
+
+          </div>
+        </div>
+
+      <!--Update-->
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto test-box">
+          <img class="icon" src="./img/folder_code_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="icon 2">
+
+          <div class="d-flex flex-column align-items-center txt-btn1 txt-test">
+            <h2 class="text-center" >UPDATE</h2>
+            <p class="text-center" >Tutte le modifiche e gli aggiornamenti della nuova versione</p>
+
+            <a href="./pdf/0.0.1.pdf" download class="btn-test">Scarica PDF</a>
+          </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer d-flex justify-content-center align-items-center text-center">
+      <p>Version: 0.0.1 (2025)<br>Tecnologies:<br>HTML, CSS, JAVASCRIPT + Framework <br> Design & Development: Samuel <br> Admin: Samuel<br>@Tutti i diritti riservati</p>
+    </div>
+
+
+
+
+
+    
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>

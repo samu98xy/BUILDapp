@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Build | Fitness App</title>
+
+    <!--style & reset-->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Abril+Fatface&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Jacques+Francois&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  </head>
+  <body>
+    
+
+   <!--navbar-->
+    <nav class="navbar nav-log navbar-expand-lg  fixed-top">
+
+      <div class="container-fluid d-flex ">
+
+        <div class="space-div"></div>
+        
+        <a href="./index.html" class="btn-home" ><img src="./img/logo.svg" alt="logo app"></a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <img class="img-ham" src="./img/hamburger.svg" alt="hamburger">
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./schede.html">SCHEDE E DIETA</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./timer.html">OROLOGIO</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="./calendario.html">CALENDARIO</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="./obbiettivi.html">OBBIETTIVI</a>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+
+    </nav>
+    <!--Motivational-->
+    <div class="d-flex justify-content-center align-items-center container-fluid pad title">
+      <h1 class="text-center">CALENDARIO ALLENAMENTI</h1>
+    </div>
+
+    <!--calendario-->
+    <div class="calendar mx-auto" aria-label="Calendario">
+
+      <div class="calendar-header">
+        <button id="prevMonth" aria-label="Mese precedente">&lt;</button>
+
+        <div class="month-year text-center" id="monthYear">Luglio 2025</div>
+
+        <button id="nextMonth" aria-label="Mese successivo">&gt;</button>
+      </div>
+
+      <div class="weekdays" aria-hidden="true">
+        <div>L</div>
+        <div>M</div>
+        <div>M</div>
+        <div>G</div>
+        <div>V</div>
+        <div>S</div>
+        <div>D</div>
+      </div>
+
+      <div class="days" id="calendarDays"></div>
+
+    </div>
+
+
+
+    <!--allenamenti correnti-->
+    <div class="d-flex justify-content-center mx">
+      <p id="counterText">ALLENAMENTI CORRENTI: 0 / 365</p>
+    </div>
+
+    <!--Box-->
+    <div class="box-cont d-flex flex-column align-items-center">
+
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+      <img class="icon" src="./img/Vector.svg" alt="icon 1">
+
+      <div class="d-flex flex-column align-items-center txt-btn1">
+        <h2 class="text-center">Ti sei allenato oggi?</h2>
+
+        <div class="d-flex btn-1 justify-content-center">
+          <a href="#" id="btnSi"><img class="btn-img" src="./img/si.png" alt="si"></a>
+          <a href="#" id="btnNo"><img class="btn-img" src="./img/x.png" alt="no"></a>
+        </div>
+
+        <!-- Messaggio -->
+        <div id="messaggioAllenamento" class="fade-in mt-2 text-center" style="display: none;">
+          Counter aggiornato
+        </div>
+      </div>
+        </div>
+
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto">
+            <img class="icon" src="./img/Vector1.svg" alt="icon 2">
+
+            <div class="d-flex flex-column align-items-center txt-btn1">
+              <h2 class="text-center">Qual è la tua motivazione oggi? Cosa vuoi raggiungere?</h2>
+
+              <div class="d-flex flex-column align-items-center btn-2" id="motivazioneBox">
+                <input id="motivationInput" class="text-center" type="text" placeholder="Scrivi qui...">
+                <a href="#" onclick="salvaMotivazione()" id="inviaBtn">Invia</a>
+
+                <!-- Testo salvato -->
+                <div id="motivazioneFissa" class="fade-in mt-2 text-center" style="display: none;"></div>
+
+                <!-- Bottone modifica sotto il testo -->
+                <a href="#" onclick="modificaMotivazione()" id="modificaBtn" style="display: none; margin-top: 0.5rem;">Modifica</a>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!--space line-->
+    <div class="line-white d-flex justify-content-center align-items-center mx-auto test-line">
+      <div class="line"></div>
+    </div>
+    
+    <div class="d-flex flex-column box-test">
+      <!--tester-->
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto test-box">
+          <img class="icon" src="./img/deployed_code_alert_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="icon 2">
+
+          <div class="d-flex flex-column align-items-center txt-btn1 txt-test">
+            <h2 class="text-center" >FOR TESTER</h2>
+            <p class="text-center" >Bug, Errori, Feedback, Migliorie? Reporta tutto direttamente qui! Grazie mille</p>
+
+            <form class="d-flex flex-column align-items-center gap-3 report-form" action="https://formspree.io/f/xrblppov" method="POST">
+                
+                <input class="test-space text-center" type="email" name="email" placeholder="Email(facoltativa)...">
+
+                <textarea class="test-space text-center" placeholder="Il tuo report..." name="message"></textarea>
+
+                <button class="btn-test" type="submit">Invia</button>
+            </form>
+
+          </div>
+        </div>
+
+      <!--Update-->
+        <div class="d-flex flex-column align-items-center justify-content-center box container-fluid mx-auto test-box">
+          <img class="icon" src="./img/folder_code_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg" alt="icon 2">
+
+          <div class="d-flex flex-column align-items-center txt-btn1 txt-test">
+            <h2 class="text-center" >UPDATE</h2>
+            <p class="text-center" >Tutte le modifiche e gli aggiornamenti della nuova versione</p>
+
+            <a href="./pdf/0.0.1.pdf" download class="btn-test">Scarica PDF</a>
+          </div>
+        </div>
+    </div>
+
+     <!--footer-->
+    <div class="footer d-flex justify-content-center align-items-center text-center">
+      <p>Version: 0.0.1 (2025)<br>Tecnologies:<br>HTML, CSS, JAVASCRIPT + Framework <br> Design & Development: Samuel <br> Admin: Samuel<br>@Tutti i diritti riservati</p>
+    </div>
+   
+    
+
+
+
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
